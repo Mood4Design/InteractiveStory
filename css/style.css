@@ -8,8 +8,8 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Kalam', sans-serif;
-    --ff-secondary: 'Kalam Light', sans-serif;
+    --ff-primary: 'Kalam';
+    --ff-secondary: 'Kalam Light';
     
     --fw-reg: 300;
     --fw-bold: 900;
