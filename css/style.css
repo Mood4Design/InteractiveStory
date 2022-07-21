@@ -902,7 +902,6 @@ b {
 
 #openDialog{
     font-size: 25px;
-    font-weight: bold;
     top: -75px;
     left: 120px;
     position: relative;
@@ -912,7 +911,7 @@ b {
     color: rgb(255, 255, 255);
     padding: 2px;
     border: 2px solid  rgb(255, 255, 255);
-    border-radius: 17px;
+    border-radius: 15px;
     text-align: center;
 }
 #customDialog{
