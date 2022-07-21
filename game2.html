@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Allan Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <!-- Update these with your own fonts -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="http://fonts.cdnfonts.com/css/kalam" rel="stylesheet">       
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+        <!-- Add the JQuery UI CSS -->
+        <link href="css/jquery-ui.css" rel="stylesheet">
+
+
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/allanlee02.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="game1.html" class="nav__link">Game</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Painter</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Art Work</a></li>
+                    <li class="nav__item"><a href="portfolio-item3.html" class="nav__link">Slideshow</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="container" style="background-image:url(img/明仇英02.png)">
+            <audio class="audio1" controls autoplay loop>
+                <source src="audio/清明上河图动画.mp3" type="audio/mpeg"/>
+                Your browser does not support the HTML5 audio tag. Consider updating to a newer browser.
+               </audio>
+            <img src="img/game02_01.png" id="game02_01" class="clickable">
+            <img src="img/game02_02.png" id="game02_02" class="clickable">
+            <img src="img/game02_03.png" id="game02_03" class="clickable">
+            <a href="game1.html" id="last">Last Page</a>
+        </div>
+        <div id="inventory">
+                <div class="items"><img src="img/game02_01.png" id="inv-game02_01"></div>
+                <div class="items"><img src="img/game02_02.png" id="inv-game02_02"></div>
+                <div class="items"><img src="img/game02_03.png" id="inv-game02_03"></div>
+        </div>
+        
+        <div class="portfolio-item-individual">
+            <p><b>Instruction:</b></p>
+            <p>Please set the 17" monitor to max screen size, matching these characters on the painting and click them into the frame above.</p>
+            <img src="img/game02intro.png" alt="" class="intro5__img">
+            
+            <p><b>Attributed to Qiu Ying (ca. 1494-1522)</b><br/>Handscroll, ink and colours on silk 34.8 x 804.2 cm</p>
+            <p>Since the Southern Song dynasty, there have been numerous copies of the painting, and by the mid-Ming dynasty there was a proliferation of copies, with Qiu Ying's Along the River During the Qingming Festivalbeing the most notable, and painters competing to copy it. </p>
+            <p>This is a relatively short work, starting with a wide countryside, followed by the marketplace at Hongqiao in the middle section, and then a monotonous paved scene of the city walls and the marketplaces. The hills and rocks are sketched with a regular and formalized line, and the brushwork is weak, not unlike Qiu Ying's refined and skilful brushwork.</p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@allan.dev" class="footer__link">hello@allan.dev</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        <!-- Add the JQuery UI JS file -->
+        <script src ="js/jquery-ui.min.js" > </script>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                setupInventory(); // only required on the first page
+                checkInventory(); // required on every page to check which items have been picked up
+                inventoryItem();
+            });
+        </script>
+
+    </body>
+</html>

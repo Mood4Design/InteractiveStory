@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Allan Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <!-- Update these with your own fonts -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="http://fonts.cdnfonts.com/css/kalam" rel="stylesheet">       
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+        <!-- Add the JQuery UI CSS -->
+        <link href="css/jquery-ui.css" rel="stylesheet">
+
+
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/allanlee02.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="game1.html" class="nav__link">Game</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Painter</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Art Work</a></li>
+                    <li class="nav__item"><a href="portfolio-item3.html" class="nav__link">Slideshow</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="intro">
+            <p class="section__subtitle section__subtitle--intro">Game</p>
+            <img src="img/易简图12.png" alt="" class="intro1__img">
+            <audio class="audio1" controls autoplay loop>
+                <source src="audio/緣起稻香.mp3" type="audio/mpeg"/>
+                Your browser does not support the HTML5 audio tag. Consider updating to a newer browser.
+               </audio>
+            <img src="img/game_01.png" alt="Chatting Girl" id="toy" class="intro2__img" >
+            <img src="img/game_02.png" alt="Young Scholar" id="toy" class="intro3__img" >
+            <img src="img/game_03.png" alt="Grooming Lady" id="toy" class="intro4__img" >
+            <a href="game2.html" id="next">Next Page</a>
+        </div>
+            <div id="cartDiv">
+                <img src="img/cart.png" alt="Shopping Cart" id="cart">
+            </div>
+        
+        <div class="portfolio-item-individual">
+            <p><b>Instruction:</b></p>
+            <p>Please set the 17" monitor to max screen size, matching these characters on the painting and drag them in the Shopping basket.</p>
+            <img src="img/game6.png" alt="" class="intro5__img">
+            <p><b>An imitation from the Ming dynasty</b><br/>Handscroll, ink and colours on silk-38 x 673.4cm</p>
+            <p>The version here traditionally attributed to Zhang includes such scenes starting from the right as a rustic countryside followed by a colourful bridal procession.  </p>
+            <p>The main arched bridge with a market, areas surrounding the city walls, and various bridges and waterfront activities.</p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@allan.dev" class="footer__link">hello@allan.dev</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        <!-- Add the JQuery UI JS file -->
+        <script src ="js/jquery-ui.min.js" > </script>
+        <script>
+            $(document).ready(function(){
+                // make any element draggable
+                $("#cartDiv").draggable();
+               // Dragging and dropping elements
+                $(".intro2__img").draggable();
+                $(".intro3__img").draggable();
+                $(".intro4__img").draggable();
+                $("#cartDiv").droppable({
+                    // Adds the class highlight to the droppable
+                    activeClass: "highlight",
+
+                    // Adds class for when element is hovered
+                    hoverClass: "hoverDroppable",
+
+                    // Function to call when element is dropped
+                    drop: function(event, ui){
+
+                    // Apply an effect when an element is dropped
+                    // clip, explode, fade, puff,
+                    // pulsate, scale, shake, slide,
+                    ui.helper.hide("fade");
+
+                    // Get the alt for the itm dropped
+                    var itemAlt = $(ui.draggable).attr("alt");
+
+                    // Display the item dropped
+                    alert("Item added : " + itemAlt);
+                    },
+
+                    // Define class of elements that can be dropped
+                    accept: "#toy",
+
+                    // Can elements currently be dropped on it
+                    disabled: false,
+
+                    // Add an element when droppable items starts to drag
+                    activate: function(event, ui){
+
+                    $("#cartMsg").remove();
+                    $(this).append("<h2 id='cartMsg'>Drop Chracters Here</h2>");
+                    },
+
+                    // Called when an item isn't dropped in the dropzone
+                    deactivate: function(event, ui){
+
+                    $("#cartMsg").remove();
+                    $(this).append("<h2 id='cartMsg'>Well done!</h2>");
+                    $('#next').show();
+                    },
+
+                    // Called when draggable is over droppable
+                    over: function(event, ui){
+
+                    $("#cartMsg").remove();
+                    $(this).append("<h2 id='cartMsg'>Drop It!!!</h2>");
+                    },
+
+                    // Called when item leaves dropzone
+                    out: function(event, ui){
+
+                    $("#cartMsg").remove();
+                    $(this).append("<h2 id='cartMsg'>NOOOOOO!!!</h2>");
+                    }
+                });
+
+          
+            });
+            
+            
+            
+        </script>
+
+    </body>
+</html>

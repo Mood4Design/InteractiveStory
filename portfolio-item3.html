@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Storytelling</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <!-- Update these with your own fonts -->
+        <link href="http://fonts.cdnfonts.com/css/kalam" rel="stylesheet">       
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Add the JQuery UI CSS -->
+        <link href="css/jquery-ui.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/allanlee02.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="game1.html" class="nav__link">Game</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Painter</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Art Work</a></li>
+                    <li class="nav__item"><a href="portfolio-item3.html" class="nav__link">Slideshow</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <div class="awesome-header">
+                <svg class="animated-star" viewBox="0 0 51 48">
+                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                </svg>
+                <div class="awesome-title">
+                  <h2 class="awesome-title__secondary awesome-title__secondary--left">Along the River </h2>
+                  <h1 class="awesome-title__primary">清明上河图</h1>
+                  <h2 class="awesome-title__secondary awesome-title__secondary--right">during the Qingming Festival</h2>
+                </div>
+            </div>
+            <p class="section__subtitle section__subtitle--intro">Attributed to Zhang Zeduan</p>
+        <div class="intr_art__img"> 
+            <img src="img/北宋-张择端08.png" alt="" >
+            <a class="open_lightbox" href="#"> Open Lightbox</a>
+            <div class="lightbox-panel">
+
+                <img src="img/北宋-张择端01.png" class="ntt_media_file" alt="北宋-张择端01" />
+                <img src="img/北宋-张择端05.png" style="display:none;" class="ntt_media_file" alt="北宋-张择端05" />
+                <img src="img/北宋-张择端03.png" style="display:none;" class="ntt_media_file" alt="北宋-张择端03" />
+                <img src="img/北宋-张择端06.png" style="display:none;" class="ntt_media_file" alt="北宋-张择端06" />
+                <img src="img/北宋-张择端02.png" style="display:none;" class="ntt_media_file" alt="Money 北宋-张择端02" />
+                <img src="img/北宋-张择端04.png" style="display:none;" class="ntt_media_file" alt="北宋-张择端04" />
+                <iframe width="525" height="315" src="https://www.youtube.com/embed/hoqtBCeT4HM" style="display:none;" class="ntt_media_file" frameborder="0" allowfullscreen></iframe>
+                
+                <div class="ntt_prev_button">
+                    <img src="img/fc_left_arrow.png" id="ntt_prev_media" alt="Get Previous Media Item" />
+                </div>
+                
+                <div class="ntt_next_button">
+                    <img src="img/fc_right_arrow.png" id="ntt_next_media" alt="Get Next Media Item" />
+            </div>
+                
+                <!-- Contains the button that closes the lightbox -->
+                <div class="ntt_close_button">
+                    <img src="img/ntt_close_button.png" id="close-panel" alt="Close Lightbox" />
+                </div>
+            </div><!-- /lightbox-panel -->
+        </div>    
+        </section>
+        
+        
+        <div class="portfolio-item-individual">
+            <p><strong style="font-size: 40px">The Song Dynasty original</strong><br/>Handscroll, ink and color on silk, 11th–12th century, 24.8 x 528.7cm</p>
+            <p>In a painting nearly one thousand years old, shopkeepers tend their stores, teahouses serve customers, and camels pass through the city gates. Although the trees have yet to sprout new leaves, boats are moored along the river as the city springs to life. </p>
+            <img class="portfolio-img" src="img/北宋-张择端07.png" alt="">
+            <p>The painting, Along the River during Qingming Festival (also sometimes referred to by the title Peace Reigns along the River), attributed to Zhang Zeduan, this painting illustrated a rare glimpse of the thriving commercial activity of medieval China.  </p>
+            <p>Nearly seventeen feet of painting portray a bustling city (possibly Kaifeng, the capital of the Northern Song dynasty, 960–1127), all done with incredible technical skill, precision, and accuracy. Numerous shops, watchtowers, moats, and bridges play host to people from all walks of life, horses, camels, and carts bustling throughout the city. All told, there are 814 humans, 28 boats, 60 animals, 30 buildings, 20 vehicles, 9 sedan chairs, and 170 trees.</p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@allan.dev" class="footer__link">hello@allan.dev</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        <!-- Add the JQuery UI JS file -->
+        <script src ="js/jquery.js" > </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.open_lightbox').show();
+          
+                // When a link of class open_lightbox is clicked this function is triggered 
+                $("a.open_lightbox").click(function(){
+                
+                // Makes all of the hidden parts of the lightbox appear
+                $(".lightbox-panel, .ntt_close_button, .ntt_next_button, .ntt_prev_button").fadeIn(300);
+                
+                // Gets the height and width of the first media type displayed
+                // Media type is a reference to any images or movies
+                ntt_img_height = $('.ntt_media_file:first').css('height');
+                ntt_img_width = $('.ntt_media_file:first').css('width');
+                
+                // Changes the size of the parent div that surrounds the media on screen
+                // Animate will make the changes slowly for dramtic effect
+                $('.ntt_media_file:first').parent().animate({
+                height: ntt_img_height+100,
+                width: ntt_img_width
+                }, "slow");
+                
+                });
+                
+                // If an img is clicked on with the id of close-panel run this function
+                $("img#close-panel").click(function(){
+                
+                // Make all the lightbox elements disappear
+                $(".lightbox-panel, .ntt_close_button, .ntt_next_button, .ntt_prev_button").fadeOut(300);
+                })
+                
+                // When the next button is clicked it triggers a click event on 
+                // the current image visible on the screen
+                $("img#ntt_next_media").click(function(){
+                    $(".ntt_media_file:visible").trigger('click');
+                });
+                
+                // Closes the lightbox if the escape key is pressed
+                $(document).keypress(function(e) {
+                    // If the key pressed was escape close the lightbox
+                    if(e.keyCode == 27)
+                    {
+                        $(".lightbox-panel").fadeOut(300);
+                    }
+                
+                });
+                
+                // This event is triggered any time the user clicks on anything with a
+                // class of ntt_media_file.
+                // It cycles through the different media types from first to last
+                $(".ntt_media_file").click(function(){
+                
+                    if( $(this).next('.ntt_media_file').length == 0)
+                    {
+                        // Make all visible media disappear in the lightbox
+                        $(".ntt_media_file:visible").toggle();
+                        
+                        // Display the first media in the lightbox
+                        $(".ntt_media_file:first").toggle();
+                        
+                        // Call this to resize the div that surrounds the media
+                        // based on the size of the media displayed
+                        ntt_resize_div_container();
+                        
+                    
+                    } else { 
+                    
+                        // Make all visible media disappear in the lightbox
+                        $(".ntt_media_file:visible").toggle();
+                        
+                        // this is a reference to the element that was clicked to trigger
+                        // this function. This statement is causing the next media 
+                        // with the class ntt_media_file to appear
+                        $(this).next('.ntt_media_file').toggle();
+                        
+                        // Call this to resize the div that surrounds the media
+                        // based on the size of the media displayed
+                        ntt_resize_div_container();		
+                    
+                    }
+                
+                });
+                
+                // This event is triggered any time the user clicks on the previous
+                // button.
+                // It cycles backwards through the different media types
+                $(".ntt_prev_button").click(function(){
+                
+                    // This checks to see if a media file is available to display
+                    if( $(".ntt_media_file:visible").prev('.ntt_media_file').length == 0)
+                    {
+                        // Make all visible media disappear in the lightbox
+                        $(".ntt_media_file:visible").toggle();
+                        
+                        // Display the first media in the lightbox
+                        $(".ntt_media_file:last").toggle();
+                        
+                        // Call this to resize the div that surrounds the media
+                        // based on the size of the media displayed
+                        ntt_resize_div_container();
+                    
+                    } else { 
+                    
+                        // Get the current index value for the media shown
+                        var ntt_current_media_shown = $(".ntt_media_file:visible").index();
+                        
+                        // Get the index for the media that proceeds the current image
+                        var ntt_prev_item_to_show = ntt_current_media_shown - 1;
+                        
+                        // Toggle off all visible media in the lightbox
+                        $(".ntt_media_file:visible").toggle();
+                        
+                        // Toggle on the media previous to the last shown
+                        $(".ntt_media_file").eq(ntt_prev_item_to_show).toggle();
+                        
+                        // Call this function to resize the div based on dimensions 
+                        // of the media shown in the lightbox
+                        ntt_resize_div_container();			
+                    
+                    }
+                
+                });
+                
+            });
+                
+                // Call this function to resize the div based on dimensions 
+                // of the media shown in the lightbox
+                function ntt_resize_div_container()
+                {
+                    // Get the current height and width of the visible media in lightbox
+                    ntt_img_height = $(".ntt_media_file:visible").css('height');
+                    ntt_img_width = $(".ntt_media_file:visible").css('width');
+                    
+                    // Define the margins based on the size of the image
+                    ntt_img_margin_top = (ntt_img_height / 4);
+                    ntt_img_margin_left = (ntt_img_width / 4);
+                        
+                    // Target the div that surrounds the visible media (it's a div)
+                    // Adjust the size of the parent div based on the dimensions
+                    // of the media it contains
+                    $(".ntt_media_file:visible").parent().animate({
+                        height: ntt_img_height+100,
+                        width: ntt_img_width
+                        }, "fast");
+
+                    
+                    $(".ntt_media_file:visible").parent().css({
+                        'position': 'fixed',
+                        'top': '22%',
+                        'left': '22%',
+                        'min-width': '530px',
+                        'margin-top': ntt_img_margin_top,
+                        'margin-left': ntt_img_margin_left
+                        });
+ 
+                } 
+            
+        </script>
+
+    </body>
+</html>
