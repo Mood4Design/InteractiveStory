@@ -894,7 +894,7 @@ b {
     position: relative;
     display: flex;
     z-index:2;
-    transform: scale(.6);
+    transform: scale(.8);
     opacity: .8;
 }
 
