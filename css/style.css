@@ -126,6 +126,7 @@ h3 { font-size: var(--fs-h3) }
     background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
+    font-family: 'Kalam';
     margin-bottom: 1em;
 }
 
