@@ -901,7 +901,7 @@ b {
 }
 
 #openDialog{
-    font-size: 25px;
+    font-size: 24px;
     top: -90px;
     left: 120px;
     position: relative;
@@ -921,7 +921,7 @@ b {
 	position: absolute;
 	bottom: 180px;
 	left: 750px;
-	font-size: 25px;
+	font-size: 24px;
 	padding: 2px;
 	border: 2px solid  rgb(255, 255, 255);
 	border-radius: 15px;
