@@ -880,7 +880,7 @@ b {
 }
 #last {
 	position: absolute;
-	bottom: 20px;
+	bottom: 35px;
 	right: 250px;
 	font-size: 30px;
 	padding: 2px;
@@ -919,7 +919,7 @@ b {
 }
 #next1 {
 	position: absolute;
-	bottom: 165px;
+	bottom: 180px;
 	left: 750px;
 	font-size: 25px;
 	padding: 2px;
