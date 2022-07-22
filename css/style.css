@@ -896,8 +896,8 @@ b {
     position: relative;
     display: flex;
     z-index:2;
-    transform: scale(.8);
-    opacity: .8;
+    transform: scale(.7);
+    opacity: .7;
 }
 
 #openDialog{
