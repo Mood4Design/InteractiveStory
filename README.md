@@ -1,6 +1,6 @@
-##Back to Song Dynasty China (960-1279)
+#Back to Song Dynasty China (960-1279)
 
-Interactive Story
+##Interactive Story
 
 ![Screenshot 2023-10-18 at 8 06 54 pm](https://github.com/Mood4Design/InteractiveStory/assets/5491619/3040c1dd-03e9-4668-b83e-4c7714329e5a)
 
